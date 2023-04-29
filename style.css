@@ -1,0 +1,799 @@
+* {
+    scroll-behavior: smooth;
+}
+
+/* Body Section */
+body {
+    display: block;
+    background-color: black;
+    color: white;
+    font-size: larger;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* General Header Section */
+h1,
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: aqua;
+}
+
+/* Navigation Bar Section */
+.topnav {
+    background-color: #000000;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.topnav a {
+    float: left;
+    color: aqua;
+    ;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.topnav a:hover {
+    background-color: midnightblue;
+    color: white;
+}
+
+/* Header Section */
+.header-grid {
+    display: grid;
+    place-items: center;
+    background-image: url('Images/losangeles.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+    height: 100vh;
+}
+
+#header h1 {
+    font-weight: bolder;
+    font-size: 70px;
+    color: aqua;
+}
+
+/* About Section */
+.about-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 130px 550px;
+    grid-template-areas:
+        'title title'
+        'profile description';
+    height: 100%;
+}
+
+#about .title {
+    grid-area: title;
+    text-align: center;
+}
+
+#about .item1 {
+    grid-area: profile;
+    background-image: url('Images/profile.JPG');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+
+#about .item2 {
+    grid-area: description;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+#about h1 {
+    text-decoration: underline midnightblue;
+    text-underline-offset: 5px;
+    font-size: 50px;
+}
+
+/* Skills Section */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 130px 500px;
+    grid-template-areas:
+        'title title title title'
+        'languages tools database operating';
+    height: 100%;
+}
+
+#skills .title {
+    grid-area: title;
+    text-align: center;
+}
+
+#skills .item1 {
+    grid-area: languages;
+    text-align: center;
+    margin: 10px;
+    border: 4px solid midnightblue;
+    padding: 5px;
+}
+
+#skills .item2 {
+    grid-area: tools;
+    text-align: center;
+    margin: 10px;
+    border: 4px solid midnightblue;
+    padding: 5px;
+}
+
+#skills .item3 {
+    grid-area: database;
+    text-align: center;
+    margin: 10px;
+    border: 4px solid midnightblue;
+    padding: 10px;
+}
+
+#skills .item4 {
+    grid-area: operating;
+    text-align: center;
+    margin: 10px;
+    border: 4px solid midnightblue;
+    padding: 5px;
+}
+
+#skills h1 {
+    text-decoration: underline midnightblue;
+    text-underline-offset: 5px;
+    font-size: 50px;
+    color: aqua;
+}
+
+#skills h2 {
+    text-align: center;
+    color: aqua;
+    text-decoration: underline midnightblue;
+    text-underline-offset: 5px;
+}
+
+/* Projects Section */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 130px 180px 250px 500px 60px 100px;
+    grid-template-areas:
+        'title title title title'
+        'project1 project2 project3 project4'
+        'project1_img project2_img project3_img project4_img'
+        'project1_description project2_description project3_description project4_description'
+        'codetag1 codetag2 codetag3 codetag4'
+        'source1 source2 source3 source4';
+    height: 100%;
+}
+
+#projects .title {
+    grid-area: title;
+    text-align: center;
+}
+
+#projects .item1 {
+    grid-area: project1;
+    text-align: center;
+}
+
+#projects .item2 {
+    grid-area: project2;
+    text-align: center;
+}
+
+#projects .item3 {
+    grid-area: project3;
+    text-align: center;
+}
+
+#projects .item4 {
+    grid-area: project4;
+    text-align: center;
+}
+
+#projects .item1 p,
+#projects .item2 p,
+#projects .item3 p,
+#projects .item4 p {
+    text-decoration: underline midnightblue;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 3px;
+
+}
+
+#projects .item5 {
+    grid-area: project1_img;
+    background-image: url('Images/ENS.PNG');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: local;
+    background-position: center center;
+    place-self: center;
+    height: 250px;
+    width: 250px;
+    border: 4px solid midnightblue;
+}
+
+#projects .item6 {
+    grid-area: project2_img;
+    background-image: url('Images/crossy_road_chicken.PNG');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: local;
+    background-position: center center;
+    place-self: center;
+    height: 250px;
+    width: 250px;
+    border: 4px solid midnightblue;
+}
+
+#projects .item7 {
+    grid-area: project3_img;
+    background-image: url('Images/pacman.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: local;
+    background-position: center center;
+    place-self: center;
+    height: 250px;
+    width: 250px;
+    border: 4px solid midnightblue;
+}
+
+
+#projects .item8 {
+    grid-area: project4_img;
+    background-image: url('Images/Space_Invader_logo.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: local;
+    background-position: center center;
+    place-self: center;
+    height: 250px;
+    width: 250px;
+    border: 4px solid midnightblue;
+}
+
+#projects .item9 {
+    grid-area: project1_description;
+    text-align: left;
+    margin: 15px;
+}
+
+#projects .item10 {
+    grid-area: project2_description;
+    text-align: left;
+    margin: 15px;
+}
+
+#projects .item11 {
+    grid-area: project3_description;
+    text-align: left;
+    margin: 15px;
+}
+
+#projects .item12 {
+    grid-area: project4_description;
+    text-align: left;
+    margin: 15px;
+}
+
+#projects .item13 {
+    grid-area: codetag1;
+    text-align: center;
+    color: aqua;
+    text-decoration: underline midnightblue;
+    text-underline-offset: 5px;
+}
+
+#projects .item14 {
+    grid-area: codetag2;
+    text-align: center;
+    color: aqua;
+    text-decoration: underline midnightblue;
+    text-underline-offset: 5px;
+}
+
+#projects .item15 {
+    grid-area: codetag3;
+    text-align: center;
+    color: aqua;
+    text-decoration: underline midnightblue;
+    text-underline-offset: 5px;
+}
+
+#projects .item16 {
+    grid-area: codetag4;
+    text-align: center;
+    color: aqua;
+    text-decoration: underline midnightblue;
+    text-underline-offset: 5px;
+}
+
+#projects .item17 {
+    grid-area: source1;
+    place-self: center;
+}
+
+#projects .item18 {
+    grid-area: source2;
+    place-self: center;
+}
+
+#projects .item19 {
+    grid-area: source3;
+    place-self: center;
+}
+
+#projects .item20 {
+    grid-area: source4;
+    place-self: center;
+}
+
+#projects h1 {
+    text-align: center;
+    text-decoration: underline midnightblue;
+    text-underline-offset: 5px;
+    font-size: 50px;
+}
+
+/* Experience Section */
+.experience-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 130px 130px 250px 575px;
+    grid-template-areas:
+        'title title'
+        'ntersol govcio'
+        'ntersol_image govcio_image'
+        'ntersol_description govcio_description';
+    height: 100%;
+}
+
+#experience .title {
+    grid-area: title;
+    text-align: center;
+}
+
+#experience .item1 {
+    grid-area: ntersol;
+    text-align: center;
+}
+
+#experience .item2 {
+    grid-area: govcio;
+    text-align: center;
+}
+
+#experience .item3 {
+    grid-area: ntersol_image;
+    background-image: url('Images/ntersol.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    place-self: center;
+    height: 250px;
+    width: 400px;
+}
+
+#experience .item4 {
+    grid-area: govcio_image;
+    background-image: url('Images/GovCIO.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    place-self: center;
+    height: 250px;
+    width: 400px;
+}
+
+#experience .item5 {
+    grid-area: ntersol_description;
+    text-align: left;
+    margin-left: 65px;
+    margin-right: 65px;
+}
+
+#experience .item6 {
+    grid-area: govcio_description;
+    text-align: left;
+    margin-left: 65px;
+    margin-right: 65px;
+}
+
+#experience h1 {
+    text-decoration: underline midnightblue;
+    text-underline-offset: 5px;
+    font-size: 50px;
+}
+
+#experience .item1 p,
+#experience .item2 p {
+    text-decoration: underline midnightblue;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 3px;
+}
+
+/* Contact Section */
+.contact-grid {
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: 130px 250px 130px;
+    grid-template-areas:
+        'title'
+        'item1'
+        'icon';
+}
+
+#contact .title {
+    grid-area: title;
+    text-align: center;
+}
+
+#contact .item1 {
+    text-align: left;
+}
+
+#contact h1 {
+    text-decoration: underline midnightblue;
+    text-underline-offset: 5px;
+    font-size: 50px;
+}
+
+a:-webkit-any-link {
+    text-decoration: none;
+}
+
+/* Icon Section */
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+}
+
+.fa-linkedin:hover,
+.fa-github:hover {
+    background: aqua;
+    color: white;
+}
+
+.fa-linkedin {
+    background: white;
+    color: black;
+}
+
+.fa-github {
+    background: white;
+    color: black;
+}
+
+/* Footer Section */
+.footer-grid {
+    display: grid;
+    place-items: center;
+    text-align: center;
+}
+
+#footer {
+    text-align: center;
+    color: aqua;
+    font-weight: bold;
+}
+
+/* Scroll Bar */
+::-webkit-Scrollbar {
+    width: 5px;
+    background: black;
+}
+
+::-webkit-Scrollbar-thumb {
+    border-radius: 10px;
+    background: aqua;
+}
+
+/* Resume Button */
+.btn {
+    background-color: white;
+    color: black;
+    padding: 20px 30px;
+    cursor: pointer;
+    font-size: 25px;
+}
+
+.btn:hover {
+    background-color: aqua;
+    color: white;
+}
+
+/* Media Queries */
+/* Mobile */
+@media screen and (max-width: 600px) {
+    .header-grid {
+        width: 100%;
+    }
+
+    .about-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 130px 435px 750px;
+        grid-template-areas:
+            'title'
+            'profile'
+            'description';
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 130px 500px 500px 500px 500px;
+        grid-template-areas:
+            'title'
+            'languages'
+            'tools'
+            'database'
+            'operating';
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 130px 130px 250px 300px 60px 100px 130px 250px 300px 60px 100px 130px 250px 300px 60px 100px 130px 250px 300px 60px 100px;
+        grid-template-areas:
+            'title'
+            'project1'
+            'project1_img'
+            'project1_description'
+            'codetag1'
+            'source1'
+            'project2'
+            'project2_img'
+            'project2_description'
+            'codetag2'
+            'source2'
+            'project3'
+            'project3_img'
+            'project3_description'
+            'codetag3'
+            'source3'
+            'project4'
+            'project4_img'
+            'project4_description'
+            'codetag4'
+            'source4';
+    }
+
+    .experience-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 130px 150px 250px 575px 130px 250px 900px;
+        grid-template-areas:
+            'title'
+            'ntersol'
+            'ntersol_image'
+            'ntersol_description'
+            'govcio'
+            'govcio_image'
+            'govcio_description';
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 130px 250px 130px;
+        grid-template-areas:
+            'title'
+            'item1'
+            'icon';
+    }
+}
+
+/* Tablet */
+@media screen and (max-width: 800px) and (min-width: 601px) {
+    .header-grid {
+        width: 100%;
+    }
+
+    .about-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 130px 435px 550px;
+        grid-template-areas:
+            'title'
+            'profile'
+            'description';
+    }
+
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 130px 500px 500px;
+        grid-template-areas:
+            'title title'
+            'languages tools'
+            'database operating';
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 130px 130px 250px 300px 60px 100px 130px 250px 300px 60px 100px 130px 250px 300px 60px 100px 130px 250px 300px 60px 100px;
+        grid-template-areas:
+            'title'
+            'project1'
+            'project1_img'
+            'project1_description'
+            'codetag1'
+            'source1'
+            'project2'
+            'project2_img'
+            'project2_description'
+            'codetag2'
+            'source2'
+            'project3'
+            'project3_img'
+            'project3_description'
+            'codetag3'
+            'source3'
+            'project4'
+            'project4_img'
+            'project4_description'
+            'codetag4'
+            'source4';
+    }
+
+    .experience-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 130px 150px 250px 375px 130px 250px 600px;
+        grid-template-areas:
+            'title'
+            'ntersol'
+            'ntersol_image'
+            'ntersol_description'
+            'govcio'
+            'govcio_image'
+            'govcio_description';
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 130px 250px 130px;
+        grid-template-areas:
+            'title'
+            'item1'
+            'icon';
+    }
+}
+
+/* Small Laptop */
+@media screen and (max-width: 1000px) and (min-width: 801px) {
+    .header-grid {
+        width: 100%;
+    }
+
+    .about-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 130px 435px 450px;
+        grid-template-areas:
+            'title'
+            'profile'
+            'description';
+    }
+
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 130px 500px 500px;
+        grid-template-areas:
+            'title title'
+            'languages tools'
+            'database operating';
+    }
+
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 130px 130px 250px 400px 60px 100px 130px 250px 400px 60px 100px;
+        grid-template-areas:
+            'title title'
+            'project1 project2'
+            'project1_img project2_img'
+            'project1_description project2_description'
+            'codetag1 codetag2'
+            'source1 source2'
+            'project3 project4'
+            'project3_img project4_img'
+            'project3_description project4_description'
+            'codetag3 codetag4'
+            'source3 source4';
+    }
+
+    .experience-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 130px 150px 250px 285px 130px 250px 450px;
+        grid-template-areas:
+            'title'
+            'ntersol'
+            'ntersol_image'
+            'ntersol_description'
+            'govcio'
+            'govcio_image'
+            'govcio_description';
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 130px 250px 130px;
+        grid-template-areas:
+            'title'
+            'item1'
+            'icon';
+    }
+}
+
+/* Large Laptop */
+@media screen and (max-width: 1200px) and (min-width: 1001px) {
+
+    .header-grid {
+        width: 100%;
+    }
+
+    .about-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 130px 435px 425px;
+        grid-template-areas:
+            'title'
+            'profile'
+            'description';
+    }
+
+    .skills-grid {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 130px 500px;
+        grid-template-areas:
+            'title title title title'
+            'languages tools database  operating';
+    }
+
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 130px 130px 250px 300px 60px 100px 130px 250px 300px 60px 100px;
+        grid-template-areas:
+            'title title'
+            'project1 project2'
+            'project1_img project2_img'
+            'project1_description project2_description'
+            'codetag1 codetag2'
+            'source1 source2'
+            'project3 project4'
+            'project3_img project4_img'
+            'project3_description project4_description'
+            'codetag3 codetag4'
+            'source3 source4';
+    }
+
+    .experience-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 130px 150px 250px 225px 130px 250px 350px;
+        grid-template-areas:
+            'title'
+            'ntersol'
+            'ntersol_image'
+            'ntersol_description'
+            'govcio'
+            'govcio_image'
+            'govcio_description';
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 130px 250px 130px;
+        grid-template-areas:
+            'title'
+            'item1'
+            'icon';
+    }
+}
