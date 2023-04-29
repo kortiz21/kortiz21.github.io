@@ -548,7 +548,7 @@ a:-webkit-any-link {
 
     .projects-grid {
         grid-template-columns: 1fr;
-        grid-template-rows: 130px 130px 250px 300px 60px 100px 130px 250px 300px 60px 100px 130px 250px 300px 60px 100px 130px 250px 300px 60px 100px;
+        grid-template-rows: 130px 130px 250px 350px 60px 100px 130px 250px 350px 60px 100px 130px 250px 350px 60px 100px 130px 250px 350px 60px 100px;
         grid-template-areas:
             'title'
             'project1'
@@ -575,7 +575,7 @@ a:-webkit-any-link {
 
     .experience-grid {
         grid-template-columns: 1fr;
-        grid-template-rows: 130px 150px 250px 575px 130px 250px 900px;
+        grid-template-rows: 130px 150px 250px 625px 130px 250px 1000px;
         grid-template-areas:
             'title'
             'ntersol'
