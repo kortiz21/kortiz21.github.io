@@ -523,7 +523,7 @@ a:-webkit-any-link {
 @media screen and (max-width: 600px) {
     .topnav a {
         padding: 12px;
-        font-size: 12px;
+        font-size: 13px;
     }
     .header-grid {
         width: 100%;
@@ -531,7 +531,7 @@ a:-webkit-any-link {
 
     .about-grid {
         grid-template-columns: 1fr;
-        grid-template-rows: 130px 435px 1000px;
+        grid-template-rows: 130px 435px 925px;
         grid-template-areas:
             'title'
             'profile'
