@@ -528,7 +528,7 @@ a:-webkit-any-link {
 
     .about-grid {
         grid-template-columns: 1fr;
-        grid-template-rows: 130px 435px 1000px;
+        grid-template-rows: 130px 435px 1200px;
         grid-template-areas:
             'title'
             'profile'
