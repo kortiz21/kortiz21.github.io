@@ -32,7 +32,6 @@ h2 {
 .topnav a {
     float: left;
     color: aqua;
-    ;
     text-align: center;
     padding: 14px;
     text-decoration: none;
@@ -522,13 +521,17 @@ a:-webkit-any-link {
 /* Media Queries */
 /* Mobile */
 @media screen and (max-width: 600px) {
+    .topnav a {
+        padding: 12px;
+        font-size: 12px;
+    }
     .header-grid {
         width: 100%;
     }
 
     .about-grid {
         grid-template-columns: 1fr;
-        grid-template-rows: 130px 435px 1200px;
+        grid-template-rows: 130px 435px 1000px;
         grid-template-areas:
             'title'
             'profile'
