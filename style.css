@@ -655,7 +655,7 @@ a:-webkit-any-link {
     }
 }
 /* Mobile - landscape */
-@media screen and (orientation: landscape) {
+@media screen and (max-width:600px) and (min-width: 320px) and (orientation: landscape) {
 
     /* Navigation Bar Section */
     .topnav a:not(:first-child) {
@@ -695,7 +695,7 @@ a:-webkit-any-link {
     /* About Section */
     .about-grid {
         grid-template-columns: 1fr;
-        grid-template-rows: 130px 435px 1050px;
+        grid-template-rows: 130px 435px 1400px;
         grid-template-areas:
             'title'
             'profile'
@@ -745,7 +745,7 @@ a:-webkit-any-link {
     /* Experience Section */
     .experience-grid {
         grid-template-columns: 1fr;
-        grid-template-rows: 130px 150px 250px 750px 130px 250px 1150px;
+        grid-template-rows: 130px 150px 250px 1050px 130px 250px 1500px;
         grid-template-areas:
             'title'
             'ntersol'
