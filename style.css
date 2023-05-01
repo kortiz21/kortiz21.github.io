@@ -98,7 +98,8 @@ h2 {
 }
 
 #about h1 {
-    text-decoration: underline midnightblue;
+    text-decoration: underline;
+    text-decoration-color: midnightblue;
     text-underline-offset: 5px;
     font-size: 50px;
 }
@@ -152,7 +153,8 @@ h2 {
 }
 
 #skills h1 {
-    text-decoration: underline midnightblue;
+    text-decoration: underline;
+    text-decoration-color: midnightblue;
     text-underline-offset: 5px;
     font-size: 50px;
     color: aqua;
@@ -161,7 +163,8 @@ h2 {
 #skills h2 {
     text-align: center;
     color: aqua;
-    text-decoration: underline midnightblue;
+    text-decoration: underline;
+    text-decoration-color: midnightblue;
     text-underline-offset: 5px;
 }
 
@@ -209,7 +212,8 @@ h2 {
 #projects .item2 p,
 #projects .item3 p,
 #projects .item4 p {
-    text-decoration: underline midnightblue;
+    text-decoration: underline;
+    text-decoration-color: midnightblue;
     text-decoration-thickness: 3px;
     text-underline-offset: 3px;
 
@@ -296,7 +300,8 @@ h2 {
     grid-area: codetag1;
     text-align: center;
     color: aqua;
-    text-decoration: underline midnightblue;
+    text-decoration: underline;
+    text-decoration-color: midnightblue;
     text-underline-offset: 5px;
 }
 
@@ -304,7 +309,8 @@ h2 {
     grid-area: codetag2;
     text-align: center;
     color: aqua;
-    text-decoration: underline midnightblue;
+    text-decoration: underline;
+    text-decoration-color: midnightblue;
     text-underline-offset: 5px;
 }
 
@@ -312,7 +318,8 @@ h2 {
     grid-area: codetag3;
     text-align: center;
     color: aqua;
-    text-decoration: underline midnightblue;
+    text-decoration: underline;
+    text-decoration-color: midnightblue;
     text-underline-offset: 5px;
 }
 
@@ -320,7 +327,8 @@ h2 {
     grid-area: codetag4;
     text-align: center;
     color: aqua;
-    text-decoration: underline midnightblue;
+    text-decoration: underline;
+    text-decoration-color: midnightblue;
     text-underline-offset: 5px;
 }
 
@@ -346,7 +354,8 @@ h2 {
 
 #projects h1 {
     text-align: center;
-    text-decoration: underline midnightblue;
+    text-decoration: underline;
+    text-decoration-color: midnightblue;
     text-underline-offset: 5px;
     font-size: 50px;
 }
@@ -416,14 +425,16 @@ h2 {
 }
 
 #experience h1 {
-    text-decoration: underline midnightblue;
+    text-decoration: underline;
+    text-decoration-color: midnightblue;
     text-underline-offset: 5px;
     font-size: 50px;
 }
 
 #experience .item1 p,
 #experience .item2 p {
-    text-decoration: underline midnightblue;
+    text-decoration: underline;
+    text-decoration-color: midnightblue;
     text-decoration-thickness: 3px;
     text-underline-offset: 3px;
 }
@@ -450,7 +461,8 @@ h2 {
 }
 
 #contact h1 {
-    text-decoration: underline midnightblue;
+    text-decoration: underline;
+    text-decoration-color: midnightblue;
     text-underline-offset: 5px;
     font-size: 50px;
 }
@@ -562,7 +574,7 @@ a:-webkit-any-link {
     /* Header Section */
     .header-grid {
         background-size: cover;
-        background-attachment: scroll;
+        background-attachment: fixed;
         background-position: center center;
     }
     #header h1 {
