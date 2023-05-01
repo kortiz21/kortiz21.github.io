@@ -4,7 +4,7 @@
 
 /* Body Section */
 body {
-    display: block;
+    margin: 0;
     background-color: black;
     color: white;
     font-size: larger;
@@ -25,15 +25,15 @@ h2 {
     background-color: #000000;
     overflow: hidden;
     position: fixed;
-    top: 0;
     width: 100%;
 }
 
 .topnav a {
     float: left;
+    display: block;
     color: aqua;
     text-align: center;
-    padding: 14px;
+    padding: 14px 16px;
     text-decoration: none;
     font-size: 14px;
 }
@@ -42,6 +42,12 @@ h2 {
     background-color: midnightblue;
     color: white;
 }
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+    display: none;
+}
+
 
 /* Header Section */
 .header-grid {
@@ -454,7 +460,12 @@ a:-webkit-any-link {
 }
 
 /* Icon Section */
-.fa {
+.fa-github,
+.fa-linkedin,
+.fa-envelope,
+.fa-phone,
+.fa-map-marker,
+.fa-download {
     padding: 20px;
     font-size: 30px;
     width: 30px;
@@ -521,14 +532,39 @@ a:-webkit-any-link {
 /* Media Queries */
 /* Mobile */
 @media screen and (max-width: 600px) {
-    .topnav a {
-        padding: 12px;
-        font-size: 13px;
+
+    /* Navigation Bar Section */
+    .topnav a:not(:first-child) {
+        display: none;
     }
+
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+
+    .topnav.responsive {
+        position: fixed;
+    }
+
+    .topnav.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
+    /* Header Section */
     .header-grid {
         width: 100%;
     }
 
+    /* About Section */
     .about-grid {
         grid-template-columns: 1fr;
         grid-template-rows: 130px 435px 925px;
@@ -538,6 +574,7 @@ a:-webkit-any-link {
             'description';
     }
 
+    /* Skills Section */
     .skills-grid {
         grid-template-columns: 1fr;
         grid-template-rows: 130px 500px 500px 500px 500px;
@@ -549,6 +586,7 @@ a:-webkit-any-link {
             'operating';
     }
 
+    /* Projects Section */
     .projects-grid {
         grid-template-columns: 1fr;
         grid-template-rows: 130px 130px 250px 350px 60px 100px 130px 250px 350px 60px 100px 130px 250px 350px 60px 100px 130px 250px 350px 60px 100px;
@@ -576,6 +614,7 @@ a:-webkit-any-link {
             'source4';
     }
 
+    /* Experience Section */
     .experience-grid {
         grid-template-columns: 1fr;
         grid-template-rows: 130px 150px 250px 625px 130px 250px 1000px;
@@ -589,6 +628,7 @@ a:-webkit-any-link {
             'govcio_description';
     }
 
+    /* Contact Section */
     .contact-grid {
         grid-template-columns: 1fr;
         grid-template-rows: 130px 250px 130px;
@@ -601,10 +641,13 @@ a:-webkit-any-link {
 
 /* Tablet */
 @media screen and (max-width: 800px) and (min-width: 601px) {
+
+    /* Header Section */
     .header-grid {
         width: 100%;
     }
 
+    /* About Section */
     .about-grid {
         grid-template-columns: 1fr;
         grid-template-rows: 130px 435px 550px;
@@ -614,6 +657,7 @@ a:-webkit-any-link {
             'description';
     }
 
+    /* Skills Section */
     .skills-grid {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: 130px 500px 500px;
@@ -623,6 +667,7 @@ a:-webkit-any-link {
             'database operating';
     }
 
+    /* Projects Section */
     .projects-grid {
         grid-template-columns: 1fr;
         grid-template-rows: 130px 130px 250px 300px 60px 100px 130px 250px 300px 60px 100px 130px 250px 300px 60px 100px 130px 250px 300px 60px 100px;
@@ -650,6 +695,7 @@ a:-webkit-any-link {
             'source4';
     }
 
+    /* Experience Section */
     .experience-grid {
         grid-template-columns: 1fr;
         grid-template-rows: 130px 150px 250px 375px 130px 250px 600px;
@@ -663,6 +709,7 @@ a:-webkit-any-link {
             'govcio_description';
     }
 
+    /* Contact Section */
     .contact-grid {
         grid-template-columns: 1fr;
         grid-template-rows: 130px 250px 130px;
@@ -679,6 +726,7 @@ a:-webkit-any-link {
         width: 100%;
     }
 
+    /* About Section */
     .about-grid {
         grid-template-columns: 1fr;
         grid-template-rows: 130px 435px 450px;
@@ -688,6 +736,7 @@ a:-webkit-any-link {
             'description';
     }
 
+    /* Skills Section */
     .skills-grid {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: 130px 500px 500px;
@@ -697,6 +746,7 @@ a:-webkit-any-link {
             'database operating';
     }
 
+    /* Projects Section */
     .projects-grid {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: 130px 130px 250px 400px 60px 100px 130px 250px 400px 60px 100px;
@@ -714,6 +764,7 @@ a:-webkit-any-link {
             'source3 source4';
     }
 
+    /* Experience Section */
     .experience-grid {
         grid-template-columns: 1fr;
         grid-template-rows: 130px 150px 250px 285px 130px 250px 450px;
@@ -727,6 +778,7 @@ a:-webkit-any-link {
             'govcio_description';
     }
 
+    /* Contact Section */
     .contact-grid {
         grid-template-columns: 1fr;
         grid-template-rows: 130px 250px 130px;
@@ -740,10 +792,12 @@ a:-webkit-any-link {
 /* Large Laptop */
 @media screen and (max-width: 1200px) and (min-width: 1001px) {
 
+    /* Header Section */
     .header-grid {
         width: 100%;
     }
 
+    /* About Section */
     .about-grid {
         grid-template-columns: 1fr;
         grid-template-rows: 130px 435px 425px;
@@ -753,6 +807,7 @@ a:-webkit-any-link {
             'description';
     }
 
+    /* Skills Section */
     .skills-grid {
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: 130px 500px;
@@ -761,6 +816,7 @@ a:-webkit-any-link {
             'languages tools database  operating';
     }
 
+    /* Projects Section */
     .projects-grid {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: 130px 130px 250px 300px 60px 100px 130px 250px 300px 60px 100px;
@@ -778,6 +834,7 @@ a:-webkit-any-link {
             'source3 source4';
     }
 
+    /* Experience Section */
     .experience-grid {
         grid-template-columns: 1fr;
         grid-template-rows: 130px 150px 250px 225px 130px 250px 350px;
@@ -791,6 +848,7 @@ a:-webkit-any-link {
             'govcio_description';
     }
 
+    /* Contact Section */
     .contact-grid {
         grid-template-columns: 1fr;
         grid-template-rows: 130px 250px 130px;
