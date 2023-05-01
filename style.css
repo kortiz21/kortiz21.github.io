@@ -574,7 +574,7 @@ a:-webkit-any-link {
     /* Header Section */
     .header-grid {
         background-size: cover;
-        background-attachment: fixed;
+        background-attachment: scroll;
         background-position: center center;
     }
     #header h1 {
