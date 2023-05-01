@@ -562,9 +562,12 @@ a:-webkit-any-link {
     /* Header Section */
     .header-grid {
         background-size: contain;
-        width: 100%;
+        background-attachment: scroll;
+        background-position: center center;
     }
-
+    #header h1 {
+        font-size: 35px;
+    }
     /* About Section */
     .about-grid {
         grid-template-columns: 1fr;
