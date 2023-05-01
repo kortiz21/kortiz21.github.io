@@ -561,6 +561,7 @@ a:-webkit-any-link {
 
     /* Header Section */
     .header-grid {
+        background-size: contain;
         width: 100%;
     }
 
