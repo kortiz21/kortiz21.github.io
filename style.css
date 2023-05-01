@@ -695,7 +695,7 @@ a:-webkit-any-link {
     /* About Section */
     .about-grid {
         grid-template-columns: 1fr;
-        grid-template-rows: 130px 435px 925px;
+        grid-template-rows: 130px 435px 1050px;
         grid-template-areas:
             'title'
             'profile'
@@ -745,7 +745,7 @@ a:-webkit-any-link {
     /* Experience Section */
     .experience-grid {
         grid-template-columns: 1fr;
-        grid-template-rows: 130px 150px 250px 625px 130px 250px 1000px;
+        grid-template-rows: 130px 150px 250px 750px 130px 250px 1150px;
         grid-template-areas:
             'title'
             'ntersol'
