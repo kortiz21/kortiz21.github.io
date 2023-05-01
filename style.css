@@ -543,7 +543,7 @@ a:-webkit-any-link {
 
 /* Media Queries */
 /* Mobile - portrait */
-@media screen and (max-width: 600px) and (orientation: portrait) {
+@media screen and (max-width: 600px) {
 
     /* Navigation Bar Section */
     .topnav a:not(:first-child) {
@@ -654,10 +654,8 @@ a:-webkit-any-link {
             'icon';
     }
 }
-/* Mobile - landscape */
+/* Mobile - landscape
 @media screen and (max-device-width:1000px) and (orientation: landscape) {
-
-    /* Navigation Bar Section */
     .topnav a:not(:first-child) {
         display: none;
     }
@@ -683,7 +681,7 @@ a:-webkit-any-link {
         text-align: left;
     }
 
-    /* Header Section */
+ 
     .header-grid {
         background-size: cover;
         background-attachment: scroll;
@@ -692,7 +690,7 @@ a:-webkit-any-link {
     #header h1 {
         font-size: 35px;
     }
-    /* About Section */
+
     .about-grid {
         grid-template-columns: 1fr;
         grid-template-rows: 130px 435px 1400px;
@@ -702,7 +700,7 @@ a:-webkit-any-link {
             'description';
     }
 
-    /* Skills Section */
+
     .skills-grid {
         grid-template-columns: 1fr;
         grid-template-rows: 130px 500px 500px 500px 500px;
@@ -714,7 +712,7 @@ a:-webkit-any-link {
             'operating';
     }
 
-    /* Projects Section */
+
     .projects-grid {
         grid-template-columns: 1fr;
         grid-template-rows: 130px 130px 250px 350px 60px 100px 130px 250px 350px 60px 100px 130px 250px 350px 60px 100px 130px 250px 350px 60px 100px;
@@ -742,7 +740,7 @@ a:-webkit-any-link {
             'source4';
     }
 
-    /* Experience Section */
+
     .experience-grid {
         grid-template-columns: 1fr;
         grid-template-rows: 130px 150px 250px 1050px 130px 250px 1500px;
@@ -756,7 +754,7 @@ a:-webkit-any-link {
             'govcio_description';
     }
 
-    /* Contact Section */
+
     .contact-grid {
         grid-template-columns: 1fr;
         grid-template-rows: 130px 250px 130px;
@@ -766,6 +764,7 @@ a:-webkit-any-link {
             'icon';
     }
 }
+*/
 /* Tablet */
 @media screen and (max-width: 800px) and (min-width: 601px) {
 
