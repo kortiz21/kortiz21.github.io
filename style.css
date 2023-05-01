@@ -543,7 +543,7 @@ a:-webkit-any-link {
 
 /* Media Queries */
 /* Mobile - portrait */
-@media screen and (max-width: 600px) and (orientation: portrait) {
+@media screen and (max-device-width: 600px) and (orientation: portrait) {
 
     /* Navigation Bar Section */
     .topnav a:not(:first-child) {
@@ -655,7 +655,7 @@ a:-webkit-any-link {
     }
 }
 /* Mobile - landscape */
-@media screen and (max-width:600px) and (min-width: 320px) and (orientation: landscape) {
+@media screen and (max-device-width:600px) and (orientation: landscape) {
 
     /* Navigation Bar Section */
     .topnav a:not(:first-child) {
