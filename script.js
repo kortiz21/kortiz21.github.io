@@ -2,7 +2,7 @@
 function scrollToElement(id) {
     document.getElementById(id).scrollIntoView();
 }
-// mobile menu toggle
+// Mobile menu toggle
 function myFunction() {
     var x = document.getElementById("myTopnav");
     if (x.className === "topnav") {
@@ -11,3 +11,10 @@ function myFunction() {
       x.className = "topnav";
     }
   }
+// Typed.js library
+var typed = new Typed(".mov",{
+  strings: [, "Hi i'm Kevin Ortiz","Graduating June 2023","Software Engineer", "Full Stack Web Developer", "Game Developer"] ,
+  typeSpeed: 100,
+  backSpeed: 100,
+  loop: true
+})
