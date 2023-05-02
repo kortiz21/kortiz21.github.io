@@ -841,7 +841,7 @@ a:-webkit-any-link {
 /* Skills Section */
 .skills-grid {
     grid-template-columns: 1fr;
-    grid-template-rows: 130px 500px 500px 500px 500px;
+    grid-template-rows: 130px 525px 525px 525px 525px;
     grid-template-areas:
         'title'
         'languages'
@@ -881,7 +881,7 @@ a:-webkit-any-link {
 /* Experience Section */
 .experience-grid {
     grid-template-columns: 1fr;
-    grid-template-rows: 130px 150px 250px 625px 130px 250px 1000px;
+    grid-template-rows: 130px 150px 250px 625px 130px 250px 800px;
     grid-template-areas:
         'title'
         'ntersol'
