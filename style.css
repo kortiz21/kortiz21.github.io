@@ -85,7 +85,7 @@ h2 {
 
 #about .item1 {
     grid-area: profile;
-    background-image: url('Images/profile.JPG');
+    background-image: url('Images/profile.png');
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center center;
