@@ -13,7 +13,7 @@ function myFunction() {
   }
 // Typed.js library
 var typed = new Typed(".mov",{
-  strings: [, "Hi i'm Kevin Ortiz","Graduating June 2023","Software Engineer", "Full Stack Web Developer", "Game Developer"] ,
+  strings: [, "Hi i'm Kevin Ortiz","Graduated Ausgust 2023","Software Engineer", "Full Stack Web Developer", "Game Developer"] ,
   typeSpeed: 100,
   backSpeed: 100,
   loop: true
